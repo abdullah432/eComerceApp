@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:background="#BF007A">
+
+        <TextView
+            android:id="@+id/userNameAdminView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="UserName"
+            android:textSize="18sp"
+            android:padding="5dp"
+            android:textColor="@android:color/black"/>
+
+        <TextView
+            android:id="@+id/phoneAdminView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phone"
+            android:textSize="18sp"
+            android:padding="5dp"
+            android:textColor="@android:color/black"
+            android:layout_alignParentEnd="true"
+            />
+
+        <TextView
+            android:id="@+id/addressAdminView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Address"
+            android:textSize="18sp"
+            android:padding="5dp"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:layout_below="@+id/phoneAdminView"/>
+
+        <TextView
+            android:id="@+id/dateAdminView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Date"
+            android:textSize="18sp"
+            android:padding="5dp"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:layout_below="@+id/addressAdminView"/>
+
+        <Button
+            android:id="@+id/view_all_products"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="VIEW ALL PRODUCTS"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:padding="12dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="8dp"
+            android:layout_below="@+id/dateAdminView"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>

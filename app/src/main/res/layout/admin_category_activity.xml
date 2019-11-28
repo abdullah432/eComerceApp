@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Admin_Category_Activity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:padding="8dp"
+        android:text="Add New Product"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="395dp"
+        android:layout_height="436dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        app:columnCount="3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:rowCount="4">
+
+        <ImageView
+            android:id="@+id/add_sportShirt"
+            android:layout_width="95dp"
+            android:layout_height="95dp"
+            android:onClick="selectCategory"
+            android:tag="sportShirt"
+            app:layout_column="0"
+            app:layout_columnWeight="1"
+            app:layout_row="0"
+            app:layout_rowWeight="1"
+            app:srcCompat="@drawable/sports" />
+
+        <ImageView
+            android:id="@+id/add_weatherShirt"
+            android:layout_width="95dp"
+            android:layout_height="95dp"
+            android:onClick="selectCategory"
+            android:tag="weatherShirt"
+            app:layout_column="1"
+            app:layout_columnWeight="1"
+            app:layout_row="0"
+            app:layout_rowWeight="1"
+            app:srcCompat="@drawable/sweather" />
+
+        <ImageView
+            android:id="@+id/add_tShirt"
+            android:layout_width="95dp"
+            android:layout_height="95dp"
+            android:onClick="selectCategory"
+            android:padding="8dp"
+            android:tag="tshirt"
+            app:layout_column="2"
+            app:layout_columnWeight="1"
+            app:layout_row="0"
+            app:layout_rowWeight="1"
+            app:srcCompat="@drawable/tshirts" />
+
+        <ImageView
+            android:id="@+id/add_hats"
+            android:layout_width="95dp"
+            android:layout_height="95dp"
+            android:onClick="selectCategory"
+            android:tag="hats"
+            app:layout_column="0"
+            app:layout_columnWeight="1"
+            app:layout_row="1"
+            app:layout_rowWeight="1"
+            app:srcCompat="@drawable/hats" />
+
+        <ImageView
+            android:id="@+id/add_purse_bag"
+            android:layout_width="95dp"
+            android:layout_height="95dp"
+            android:onClick="selectCategory"
+            android:tag="purse"
+            app:layout_column="1"
+            app:layout_columnWeight="1"
+            app:layout_row="1"
+            app:layout_rowWeight="1"
+            app:srcCompat="@drawable/purses_bags" />
+
+        <ImageView
+            android:id="@+id/add_shoes"
+            android:layout_width="95dp"
+            android:layout_height="95dp"
+            android:onClick="selectCategory"
+            android:padding="8dp"
+            android:tag="shoes"
+            app:layout_column="2"
+            app:layout_columnWeight="1"
+            app:layout_row="1"
+            app:layout_rowWeight="1"
+            app:srcCompat="@drawable/shoess" />
+
+        <ImageView
+            android:id="@+id/add_headphones"
+            android:layout_width="95dp"
+            android:layout_height="95dp"
+            android:onClick="selectCategory"
+            android:tag="headphones"
+            app:layout_column="0"
+            app:layout_columnWeight="1"
+            app:layout_row="2"
+            app:layout_rowWeight="1"
+            app:srcCompat="@drawable/headphoness" />
+
+        <ImageView
+            android:id="@+id/add_female_dresses"
+            android:layout_width="95dp"
+            android:layout_height="95dp"
+            android:onClick="selectCategory"
+            android:tag="femaleClothes"
+            app:layout_column="1"
+            app:layout_columnWeight="1"
+            app:layout_row="2"
+            app:layout_rowWeight="1"
+            app:srcCompat="@drawable/female_dresses" />
+
+        <ImageView
+            android:id="@+id/add_glasses"
+            android:layout_width="95dp"
+            android:layout_height="95dp"
+            android:onClick="selectCategory"
+            android:padding="8dp"
+            android:tag="glasses"
+            app:layout_column="2"
+            app:layout_columnWeight="1"
+            app:layout_row="2"
+            app:layout_rowWeight="1"
+            app:srcCompat="@drawable/glasses" />
+
+        <ImageView
+            android:id="@+id/add_watches"
+            android:layout_width="95dp"
+            android:layout_height="95dp"
+            android:onClick="selectCategory"
+            android:tag="watches"
+            app:layout_column="0"
+            app:layout_columnWeight="1"
+            app:layout_row="3"
+            app:layout_rowWeight="1"
+            app:srcCompat="@drawable/watches" />
+
+        <ImageView
+            android:id="@+id/add_laptops"
+            android:layout_width="95dp"
+            android:layout_height="95dp"
+            android:onClick="selectCategory"
+            android:tag="laptops"
+            app:layout_column="1"
+            app:layout_columnWeight="1"
+            app:layout_row="3"
+            app:layout_rowWeight="1"
+            app:srcCompat="@drawable/laptops" />
+
+        <ImageView
+            android:id="@+id/add_mobiles"
+            android:layout_width="95dp"
+            android:layout_height="95dp"
+            android:onClick="selectCategory"
+            android:tag="mobiles"
+            app:layout_column="2"
+            app:layout_columnWeight="1"
+            app:layout_row="3"
+            app:layout_rowWeight="1"
+            app:srcCompat="@drawable/mobiles" />
+
+
+    </androidx.gridlayout.widget.GridLayout>
+
+    <Button
+        android:id="@+id/checkNewOrder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_marginTop="20dp"
+        android:onClick="checkNewOrder"
+        android:padding="15dp"
+        android:text="Check New Orders"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gridLayout" />
+
+    <Button
+        android:id="@+id/logOut"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_marginTop="19dp"
+        android:onClick="LogOut"
+        android:padding="15dp"
+        android:text="Log out"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/checkNewOrder"
+        app:layout_constraintStart_toStartOf="@+id/checkNewOrder"
+        app:layout_constraintTop_toBottomOf="@+id/checkNewOrder" />
+</androidx.constraintlayout.widget.ConstraintLayout>

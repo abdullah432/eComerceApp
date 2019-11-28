@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Admin_AddNewProduct_Activity">
+
+    <ImageView
+        android:id="@+id/select_Product_Image"
+        android:layout_width="match_parent"
+        android:layout_height="203dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="25dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/select_product_image" />
+
+    <EditText
+        android:id="@+id/newProductName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/join"
+        android:ems="10"
+        android:hint="Product Name"
+        android:inputType="textPersonName"
+        android:padding="15dp"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/newProductDescription"
+        app:layout_constraintEnd_toEndOf="@+id/select_Product_Image"
+        app:layout_constraintStart_toStartOf="@+id/select_Product_Image"
+        app:layout_constraintTop_toBottomOf="@+id/select_Product_Image"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <EditText
+        android:id="@+id/newProductDescription"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/join"
+        android:ems="10"
+        android:hint="Description"
+        android:inputType="textMultiLine"
+        android:padding="15dp"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/newProductPrice"
+        app:layout_constraintEnd_toEndOf="@+id/newProductName"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/newProductName"
+        app:layout_constraintTop_toBottomOf="@+id/newProductName" />
+
+    <EditText
+        android:id="@+id/newProductPrice"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/join"
+        android:ems="10"
+        android:hint="Price"
+        android:inputType="textPersonName"
+        android:padding="15dp"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/addProductButton"
+        app:layout_constraintEnd_toEndOf="@+id/newProductDescription"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/newProductDescription"
+        app:layout_constraintTop_toBottomOf="@+id/newProductDescription" />
+
+    <Button
+        android:id="@+id/addProductButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/loginback"
+        android:onClick="addProduct"
+        android:padding="15dp"
+        android:text="add Product"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/newProductPrice"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/newProductPrice"
+        app:layout_constraintTop_toBottomOf="@+id/newProductPrice" />
+</androidx.constraintlayout.widget.ConstraintLayout>
